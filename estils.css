@@ -32,7 +32,7 @@ h2 {
 }
 
 .animacioescuts {
-    max-width: 100%; /* Limita el ancho al 100% del contenedor padre */
+    max-width: 150%; /* Limita el ancho al 100% del contenedor padre */
     width: auto; /* Permite que se ajuste al contenido */
     height: auto;
     position: relative;
