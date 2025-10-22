@@ -3,9 +3,23 @@
     text-align: center;
 }
 
+h1 {
+    font-family: 'Stentiga', serif;
+    font-size: 28px;
+}
+.titols h1 {
+    font-family: 'Stentiga', serif;
+    font-size: 52px;
+    padding-top: 5%;
+}
 h2 {
     font-family: 'Stentiga', serif;
     font-size: 28px;
+}
+.titols h2 {
+    font-family: 'Stentiga', serif;
+    font-size: 52px;
+    padding-top: 5%;
 }
 
 .card-img-top {
@@ -25,7 +39,10 @@ h2 {
     background-repeat: no-repeat;
     position: relative;
 }
-
+.navbar .container > img {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
 .temporada {
     font-family: 'Montserrat', serif;
     margin-bottom: 20px;
@@ -37,12 +54,7 @@ h2 {
     height: auto;
     position: relative;
     overflow: hidden; /* Contiene la animación */
-    animation-name: escuts;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
 }
-
 
 .animacioescuts img {
     width: 150%; /* Aumenta el tamaño de la imagen (ajústalos a 150%, 200%, etc.) */
@@ -50,11 +62,6 @@ h2 {
     display: block; /* Evita espacios adicionales */
     margin-left: -25%; /* Ajusta para centrar la imagen ampliada */
 }
-
-.animacioescuts:hover {
-    animation-play-state: paused;
-}
-
 @keyframes escuts {
     from {
         left: 0; /* Reinicia desde el inicio */
@@ -69,4 +76,13 @@ h2 {
 /* Evita desplazamiento horizontal en todo el body */
 body {
     overflow-x: hidden;
+}
+@font-face {
+    font-family: 'Stentiga';
+    src: url('./ttf/Stentiga.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+.titols{
+    text-align:left
 }

@@ -101,7 +101,7 @@
   <header>
     <nav class="navbar navbar-expand-lg sticky-top " style="background-color: #e7e2d5;">
       <div class="container">
-        <img src="fotos web/altres/2-02.png" alt="Logo" width="160" height="120" class="d-inline-block align-text-top ms-4 ">
+        <img src="fotos web/altres/ex-01.png" alt="Logo" width="160" height="60" class="d-inline-block align-text-top ms-4 ">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -136,7 +136,7 @@
     <section>
       <div class="row">
         <div class="col-12 col-md-6 ">
-          <h2>Història</h2>
+          <div class="titols"> <h1>Història</h1></div>
           <p>El Club Gimnàstic de Tarragona, S. A. D., conocido de forma popular como Nàstic de Tarragona o simplemente Nàstic, es un club de fútbol español con sede en la ciudad de Tarragona, en la comunidad autónoma de Cataluña, España. Es la entidad deportiva más antigua en existencia ininterrumpida de España.[1] Actualmente milita en el Grupo 2 de la Primera Federación, tercera categoría del fútbol español.
 
 Disputa sus encuentros como local en el Nou Estadi de Tarragona, con capacidad para 14 591 espectadores, aunque inicialmente tenía capacidad para 18 000, tras la inhabilitación de una de sus graderías.
@@ -148,6 +148,8 @@ En el año 2016 el Club Gimnàstic y sus secciones tenían aproximadamente 850 s
         </div>
       </div>
     </section>
+    <section>
+
   </article>
 
   <!-- Secció de Animació escut -->
@@ -155,7 +157,15 @@ En el año 2016 el Club Gimnàstic y sus secciones tenían aproximadamente 850 s
     <div class="container">
       <h2>Escuts</h2>
     </div>
-    <div id="animacioescuts"><img src="fotos web/escuts/timeline.png" class="animacioescuts" alt="..."></div>
+    <div id="animacioescuts"></div>
+  
+        <div class="demo">
+        <div class="box bg-warning" id="boxFromTo">
+        <img src="fotos web/escuts/timeline.png" class="animacioescuts" alt="...">
+        </div>
+      </div>
+  </section>
+  
   </article>
 
   <!-- Secció de Samarretes -->
@@ -427,7 +437,6 @@ En el año 2016 el Club Gimnàstic y sus secciones tenían aproximadamente 850 s
   <!-- Secció de Patrocinadors -->
   <article class="my-3" id="patrocinadors" style="background: url('img/Sin título-1.jpg') no-repeat center center; background-size: cover; background-attachment: fixed;">
     <section class="sponsors-container">
-      <h2>Marques Gimnàstic</h2>
       <div class="contenedor_animacion">
         <img class="bird" src="img/nastic.png" alt="Pájaro cayendo entre nubes" />
         <div class="particulas" id="particulas"></div>
@@ -457,6 +466,15 @@ En el año 2016 el Club Gimnàstic y sus secciones tenían aproximadamente 850 s
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
   <script>
+    gsap.fromTo("#boxFromTo",
+    { x: 200},  // posición inicial y transparente
+    { x: -1000,    // posición final y visible
+      duration: 6,
+      repeat: -1,
+      yoyo: true,
+      ease: "power1.inOut", 
+    }
+  );
     gsap.registerPlugin(ScrollTrigger);
 
     const tlPrincipal = gsap.timeline({
