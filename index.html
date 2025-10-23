@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bootstrap demo</title>
-  <link rel="stylesheet" href="estils.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
         rel="stylesheet" 
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
         crossorigin="anonymous">
+   <link rel="stylesheet" href="estils.css">
   <link href="/ttf/Stentiga.otf" rel="stylesheet">
   <link rel="stylesheet" href="/estils.css">
   <style>
@@ -101,7 +101,12 @@
   <header>
     <nav class="navbar navbar-expand-lg sticky-top " style="background-color: #e7e2d5;">
       <div class="container">
+        <h1 class="visually-hidden">Club Esportiu Gimnàstic</h1>
+        
         <img src="fotos web/altres/ex-01.png" alt="Logo" width="160" height="60" class="d-inline-block align-text-top ms-4 ">
+        
+        
+        
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -136,7 +141,7 @@
     <section>
         <div class="row">
             <div class="col-12 col-md-6">
-                <div class="titols"><h1>Història</h1></div>
+                <div class="titols"><h2>Història</h2></div>
                 <p>El Club Gimnàstic de Tarragona, conegut popularment com a Nàstic de Tarragona o simplement Nàstic, és un club de futbol espanyol amb seu a la ciutat de Tarragona, a la comunitat autònoma de Catalunya. Fundat el 1886, es considera l'entitat esportiva més antiga en existència ininterrompuda d'Espanya, amb una rica tradició que abasta més d'un segle. Actualment, el club competeix al Grup 2 de la Primera Federació, la tercera categoria del futbol espanyol.
 
 Els seus partits com a local es disputen al Nou Estadi de Tarragona, un recinte amb capacitat per a 14.591 espectadors, tot i que inicialment podia acollir fins a 18.000 abans de l'inhabilitació d'una de les graderies. Aquest estadi ha estat testimoni de molts moments memorables en la història del club, incloent-hi ascensos i temporades destacades.
@@ -144,10 +149,10 @@ Els seus partits com a local es disputen al Nou Estadi de Tarragona, un recinte 
 Durant els últims anys, el Nàstic ha mantingut una forta connexió amb la seva afició. El 2016, el club i les seves seccions comptaven amb aproximadament 850 socis, mentre que, per exemple, durant la temporada 2017-2018, la Societat Anònima del Gimnàstic va registrar més de 8.500 abonats, reflectint l'esperit i el suport de la ciutat. Aquest compromís amb la comunitat ha estat un pilar fonamental per al creixement i la identitat del club al llarg del temps.</p>
             </div>
             <div class="col-12 col-md-6">
-                <div class="historia-image-container">
-                    <img src="./fotos web/altres/història.png" class="historia-img" alt="Historia 1">
-                    <img src="./fotos web/altres/història2.png" class="historia-img" alt="Historia 2">
-                </div>
+                <div class="image-container">
+    <img src="./fotos web/altres/història.png" class="historia-img" alt="Historia 1">
+    <img src="./fotos web/altres/història2.png" class="historia-img" alt="Historia 2">
+</div>
             </div>
         </div>
     </section>
@@ -166,8 +171,8 @@ Durant els últims anys, el Nàstic ha mantingut una forta connexió amb la seva
     <div id="animacioescuts"></div>
   
         <div class="demo">
-        <div class="box bg-warning" id="boxFromTo">
-        <img src="fotos web/escuts/timeline.png" class="animacioescuts" alt="...">
+        <div id="boxFromTo">
+        <img src="fotos web/escuts/timeline.png" class="animacioescuts" alt="linea de temps evolució escut Nàstic">
         </div>
       </div>
   </section>
@@ -177,31 +182,31 @@ Durant els últims anys, el Nàstic ha mantingut una forta connexió amb la seva
   <!-- Secció de Samarretes -->
   <article class="container my-3" id="samarretes">
     <div class="mb-5">
-     <div class="titols"><h3>Samarretes</h3>
+     <div class="titols"><h2>Samarretes</h2>
     </div></div>   
     <section class="mb-5">
       <h3 class="temporada">Temporada 2025-2026</h3>
       <div class="d-flex gap-3 justify-content-center flex-wrap">
         <div class="card" style="width: 18rem;">
-          <img src="./fotos web/samarretes/25.1.png" class="card-img-top" alt="...">
+          <img src="./fotos web/samarretes/25.1.png" class="card-img-top" alt="">
           <div class="card-body">
             <h6 class="card-title">1a equipació</h6>
           </div>
         </div>
         <div class="card" style="width: 18rem;">
-          <img src="./fotos web/samarretes/25.2.png" class="card-img-top" alt="...">
+          <img src="./fotos web/samarretes/25.2.png" class="card-img-top" alt="">
           <div class="card-body">
             <h6 class="card-title">2a equipació</h6>
           </div>
         </div>
         <div class="card" style="width: 18rem;">
-          <img src="./fotos web/samarretes/25.3.png" class="card-img-top" alt="...">
+          <img src="./fotos web/samarretes/25.3.png" class="card-img-top" alt="">
           <div class="card-body">
             <h6 class="card-title">1a equipació porter</h6>
           </div>
         </div>
         <div class="card" style="width: 18rem;">
-          <img src="./fotos web/samarretes/25.4.png" class="card-img-top" alt="...">
+          <img src="./fotos web/samarretes/25.4.png" class="card-img-top" alt="">
           <div class="card-body">
             <h6 class="card-title">3a equipació porter</h6>
           </div>
@@ -212,25 +217,25 @@ Durant els últims anys, el Nàstic ha mantingut una forta connexió amb la seva
       <h3 class="temporada">Temporada 2024-2025</h3>
       <div class="d-flex gap-3 justify-content-center flex-wrap">
         <div class="card" style="width: 18rem;">
-          <img src="./fotos web/samarretes/24.1.png" class="card-img-top" alt="...">
+          <img src="./fotos web/samarretes/24.1.png" class="card-img-top" alt="">
           <div class="card-body">
             <h6 class="card-title">1a equipació</h6>
           </div>
         </div>
         <div class="card" style="width: 18rem;">
-          <img src="./fotos web/samarretes/24.2.png" class="card-img-top" alt="...">
+          <img src="./fotos web/samarretes/24.2.png" class="card-img-top" alt="">
           <div class="card-body">
             <h6 class="card-title">2a equipació</h6>
           </div>
         </div>
         <div class="card" style="width: 18rem;">
-          <img src="./fotos web/samarretes/24.3.png" class="card-img-top" alt="...">
+          <img src="./fotos web/samarretes/24.3.png" class="card-img-top" alt="">
           <div class="card-body">
             <h6 class="card-title">1a equipació porter</h6>
           </div>
         </div>
         <div class="card" style="width: 18rem;">
-          <img src="./fotos web/samarretes/24.4.png" class="card-img-top" alt="...">
+          <img src="./fotos web/samarretes/24.4.png" class="card-img-top" alt="">
           <div class="card-body">
             <h6 class="card-title">2a equipació porter</h6>
           </div>
@@ -241,13 +246,13 @@ Durant els últims anys, el Nàstic ha mantingut una forta connexió amb la seva
       <h3 class="temporada">Temporada 2023-2024</h3>
       <div class="d-flex gap-3 justify-content-center flex-wrap">
         <div class="card" style="width: 18rem;">
-          <img src="./fotos web/samarretes/23.1.png" class="card-img-top" alt="...">
+          <img src="./fotos web/samarretes/23.1.png" class="card-img-top" alt="">
           <div class="card-body">
             <h6 class="card-title">1a equipació</h6>
           </div>
         </div>
         <div class="card" style="width: 18rem;">
-          <img src="./fotos web/samarretes/23.2.png" class="card-img-top" alt="...">
+          <img src="./fotos web/samarretes/23.2.png" class="card-img-top" alt="">
           <div class="card-body">
             <h6 class="card-title">2a equipació</h6>
           </div>
@@ -258,25 +263,25 @@ Durant els últims anys, el Nàstic ha mantingut una forta connexió amb la seva
       <h3 class="temporada">Temporada 2022-2023</h3>
       <div class="d-flex gap-3 justify-content-center flex-wrap">
         <div class="card" style="width: 18rem;">
-          <img src="./fotos web/samarretes/22.1.png" class="card-img-top" alt="...">
+          <img src="./fotos web/samarretes/22.1.png" class="card-img-top" alt="">
           <div class="card-body">
             <h6 class="card-title">1a equipació</h6>
           </div>
         </div>
         <div class="card" style="width: 18rem;">
-          <img src="./fotos web/samarretes/22.2.png" class="card-img-top" alt="...">
+          <img src="./fotos web/samarretes/22.2.png" class="card-img-top" alt="">
           <div class="card-body">
             <h6 class="card-title">2a equipació</h6>
           </div>
         </div>
         <div class="card" style="width: 18rem;">
-          <img src="./fotos web/samarretes/22.3.png" class="card-img-top" alt="...">
+          <img src="./fotos web/samarretes/22.3.png" class="card-img-top" alt="">
           <div class="card-body">
             <h6 class="card-title">1a equipació porter</h6>
           </div>
         </div>
         <div class="card" style="width: 18rem;">
-          <img src="./fotos web/samarretes/22.4.png" class="card-img-top" alt="...">
+          <img src="./fotos web/samarretes/22.4.png" class="card-img-top" alt="">
           <div class="card-body">
             <h6 class="card-title">2a equipació porter</h6>
           </div>
@@ -287,19 +292,19 @@ Durant els últims anys, el Nàstic ha mantingut una forta connexió amb la seva
       <h3 class="temporada">Temporada 2021-2022</h3>
       <div class="d-flex gap-3 justify-content-center flex-wrap">
         <div class="card" style="width: 18rem;">
-          <img src="./fotos web/samarretes/21.1.png" class="card-img-top" alt="...">
+          <img src="./fotos web/samarretes/21.1.png" class="card-img-top" alt="">
           <div class="card-body">
             <h6 class="card-title">1a equipació</h6>
           </div>
         </div>
         <div class="card" style="width: 18rem;">
-          <img src="./fotos web/samarretes/21.2.png" class="card-img-top" alt="...">
+          <img src="./fotos web/samarretes/21.2.png" class="card-img-top" alt="">
           <div class="card-body">
             <h6 class="card-title">2a equipació</h6>
           </div>
         </div>
         <div class="card" style="width: 18rem;">
-          <img src="./fotos web/samarretes/21.3.png" class="card-img-top" alt="...">
+          <img src="./fotos web/samarretes/21.3.png" class="card-img-top" alt="">
           <div class="card-body">
             <h6 class="card-title">3a equipació</h6>
           </div>
@@ -307,22 +312,22 @@ Durant els últims anys, el Nàstic ha mantingut una forta connexió amb la seva
       </div>
     </section>
     <section>
-      <h3>Temporada 2020-2021</h3>
+      <h3 class="temporada">Temporada 2020-2021</h3>
       <div class="d-flex gap-3 justify-content-center flex-wrap">
         <div class="card" style="width: 18rem;">
-          <img src="./fotos web/samarretes/20.1.png" class="card-img-top" alt="...">
+          <img src="./fotos web/samarretes/20.1.png" class="card-img-top" alt="">
           <div class="card-body">
             <h6 class="card-title">1a equipació</h6>
           </div>
         </div>
         <div class="card" style="width: 18rem;">
-          <img src="./fotos web/samarretes/20.2.png" class="card-img-top" alt="...">
+          <img src="./fotos web/samarretes/20.2.png" class="card-img-top" alt="">
           <div class="card-body">
             <h6 class="card-title">2a equipació</h6>
           </div>
         </div>
         <div class="card" style="width: 18rem;">
-          <img src="./fotos web/samarretes/20.3.png" class="card-img-top" alt="...">
+          <img src="./fotos web/samarretes/20.3.png" class="card-img-top" alt="">
           <div class="card-body">
             <h6 class="card-title">3a equipació</h6>
           </div>
@@ -330,16 +335,16 @@ Durant els últims anys, el Nàstic ha mantingut una forta connexió amb la seva
       </div>
     </section>
     <section>
-      <h3>Temporada 2019-2020</h3>
+      <h3 class="temporada">Temporada 2019-2020</h3>
       <div class="d-flex gap-3 justify-content-center flex-wrap">
         <div class="card" style="width: 18rem;">
-          <img src="./fotos web/samarretes/20.1.png" class="card-img-top" alt="...">
+          <img src="./fotos web/samarretes/20.1.png" class="card-img-top" alt="">
           <div class="card-body">
             <h6 class="card-title">1a equipació</h6>
           </div>
         </div>
         <div class="card" style="width: 18rem;">
-          <img src="./fotos web/samarretes/19.2.png" class="card-img-top" alt="...">
+          <img src="./fotos web/samarretes/19.2.png" class="card-img-top" alt="">
           <div class="card-body">
             <h6 class="card-title">2a equipació</h6>
           </div>
@@ -347,22 +352,22 @@ Durant els últims anys, el Nàstic ha mantingut una forta connexió amb la seva
       </div>
     </section>
     <section>
-      <h3>Temporada 2018-2019</h3>
+      <h3 class="temporada">Temporada 2018-2019</h3>
       <div class="d-flex gap-3 justify-content-center flex-wrap">
         <div class="card" style="width: 18rem;">
-          <img src="./fotos web/samarretes/18.1.png" class="card-img-top" alt="...">
+          <img src="./fotos web/samarretes/18.1.png" class="card-img-top" alt="">
           <div class="card-body">
             <h6 class="card-title">1a equipació</h6>
           </div>
         </div>
         <div class="card" style="width: 18rem;">
-          <img src="./fotos web/samarretes/19.2.png" class="card-img-top" alt="...">
+          <img src="./fotos web/samarretes/19.2.png" class="card-img-top" alt="">
           <div class="card-body">
             <h6 class="card-title">2a equipació</h6>
           </div>
         </div>
         <div class="card" style="width: 18rem;">
-          <img src="./fotos web/samarretes/18.3.png" class="card-img-top" alt="...">
+          <img src="./fotos web/samarretes/18.3.png" class="card-img-top" alt="">
           <div class="card-body">
             <h6 class="card-title">3a equipació</h6>
           </div>
@@ -370,22 +375,22 @@ Durant els últims anys, el Nàstic ha mantingut una forta connexió amb la seva
       </div>
     </section>
     <section>
-      <h3>Temporada 2017-2018</h3>
+      <h3 class="temporada"></h3>Temporada 2017-2018</h3>
       <div class="d-flex gap-3 justify-content-center flex-wrap">
         <div class="card" style="width: 18rem;">
-          <img src="./fotos web/samarretes/17.1.png" class="card-img-top" alt="...">
+          <img src="./fotos web/samarretes/17.1.png" class="card-img-top" alt="">
           <div class="card-body">
             <h6 class="card-title">1a equipació</h6>
           </div>
         </div>
         <div class="card" style="width: 18rem;">
-          <img src="./fotos web/samarretes/17.2.png" class="card-img-top" alt="...">
+          <img src="./fotos web/samarretes/17.2.png" class="card-img-top" alt="">
           <div class="card-body">
             <h6 class="card-title">2a equipació</h6>
           </div>
         </div>
         <div class="card" style="width: 18rem;">
-          <img src="./fotos web/samarretes/18.3.png" class="card-img-top" alt="...">
+          <img src="./fotos web/samarretes/18.3.png" class="card-img-top" alt="">
           <div class="card-body">
             <h6 class="card-title">3a equipació</h6>
           </div>
@@ -393,22 +398,22 @@ Durant els últims anys, el Nàstic ha mantingut una forta connexió amb la seva
       </div>
     </section>
     <section>
-      <h3>Temporada 2016-2017</h3>
+      <h3 class="temporada">Temporada 2016-2017</h3>
       <div class="d-flex gap-3 justify-content-center flex-wrap">
         <div class="card" style="width: 18rem;">
-          <img src="./fotos web/samarretes/16.1.png" class="card-img-top" alt="...">
+          <img src="./fotos web/samarretes/16.1.png" class="card-img-top" alt="">
           <div class="card-body">
             <h6 class="card-title">1a equipació</h6>
           </div>
         </div>
         <div class="card" style="width: 18rem;">
-          <img src="./fotos web/samarretes/16.2.png" class="card-img-top" alt="...">
+          <img src="./fotos web/samarretes/16.2.png" class="card-img-top" alt="">
           <div class="card-body">
             <h6 class="card-title">2a equipació</h6>
           </div>
         </div>
         <div class="card" style="width: 18rem;">
-          <img src="./fotos web/samarretes/16.3.png" class="card-img-top" alt="...">
+          <img src="./fotos web/samarretes/16.3.png" class="card-img-top" alt="">
           <div class="card-body">
             <h6 class="card-title">3a equipació</h6>
           </div>
@@ -416,22 +421,22 @@ Durant els últims anys, el Nàstic ha mantingut una forta connexió amb la seva
       </div>
     </section>
     <section>
-      <h3>Temporada 2015-2016</h3>
+      <h3 class="temporada">Temporada 2015-2016</h3>
       <div class="d-flex gap-3 justify-content-center flex-wrap">
         <div class="card" style="width: 18rem;">
-          <img src="./fotos web/samarretes/15.1.png" class="card-img-top" alt="...">
+          <img src="./fotos web/samarretes/15.1.png" class="card-img-top" alt="">
           <div class="card-body">
             <h6 class="card-title">1a equipació</h6>
           </div>
         </div>
         <div class="card" style="width: 18rem;">
-          <img src="./fotos web/samarretes/15.2.png" class="card-img-top" alt="...">
+          <img src="./fotos web/samarretes/15.2.png" class="card-img-top" alt="">
           <div class="card-body">
             <h6 class="card-title">2a equipació</h6>
           </div>
         </div>
         <div class="card" style="width: 18rem;">
-          <img src="./fotos web/samarretes/15.3.png" class="card-img-top" alt="...">
+          <img src="./fotos web/samarretes/15.3.png" class="card-img-top" alt="">
           <div class="card-body">
             <h6 class="card-title">3a equipació</h6>
           </div>
@@ -475,7 +480,7 @@ Durant els últims anys, el Nàstic ha mantingut una forta connexió amb la seva
     gsap.fromTo("#boxFromTo",
     { x: 200},  // posición inicial y transparente
     { x: -1000,    // posición final y visible
-      duration: 6,
+      duration: 10,
       repeat: -1,
       yoyo: true,
       ease: "power1.inOut", 
@@ -625,19 +630,7 @@ Durant els últims anys, el Nàstic ha mantingut una forta connexió amb la seva
         console.log(`📊 Progreso: ${(self.progress * 100).toFixed(0)}%`);
       }
     });
-
-const historiaImages = gsap.utils.toArray(".historia-img");
-gsap.set(historiaImages[0], { opacity: 1 }); // Mostrar la primera imagen inicialmente
-const historiaTimeline = gsap.timeline({ repeat: -1 });
-
-historiaTimeline
-  .to(historiaImages[0], { opacity: 0, duration: 1, delay: 2 }) // Fade out primera imagen tras 2s
-  .to(historiaImages[1], { opacity: 1, duration: 1 }, "-=1") // Fade in segunda imagen
-  .to(historiaImages[1], { opacity: 1, duration: 0, delay: 8 }) // Mantener segunda imagen 8s
-  .to(historiaImages[1], { opacity: 0, duration: 1 }) // Fade out segunda imagen
-  .to(historiaImages[0], { opacity: 1, duration: 1 }, "-=1"); // Fade in primera imagen
-
-
+    
   </script>
 </body>
 </html>
