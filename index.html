@@ -10,7 +10,6 @@
         crossorigin="anonymous">
    <link rel="stylesheet" href="estils.css">
   <link href="/ttf/Stentiga.otf" rel="stylesheet">
-  <link rel="stylesheet" href="/estils.css">
   <style>
     .sponsors-container {
       position: relative;
@@ -105,8 +104,6 @@
         
         <img src="fotos web/altres/ex-01.png" alt="Logo" width="160" height="60" class="d-inline-block align-text-top ms-4 ">
         
-        
-        
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -137,53 +134,45 @@
   </header>
 
   <!-- Primera secció amb columnes -->
-<article class="container my-3" id="historia">
+  <article class="container my-3" id="historia">
     <section>
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <div class="titols"><h2>Història</h2></div>
-                <p>El Club Gimnàstic de Tarragona, conegut popularment com a Nàstic de Tarragona o simplement Nàstic, és un club de futbol espanyol amb seu a la ciutat de Tarragona, a la comunitat autònoma de Catalunya. Fundat el 1886, es considera l'entitat esportiva més antiga en existència ininterrompuda d'Espanya, amb una rica tradició que abasta més d'un segle. Actualment, el club competeix al Grup 2 de la Primera Federació, la tercera categoria del futbol espanyol.
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <div class="titols"><h2>Història</h2></div>
+          <p>El Club Gimnàstic de Tarragona, conegut popularment com a Nàstic de Tarragona o simplement Nàstic, és un club de futbol espanyol amb seu a la ciutat de Tarragona, a la comunitat autònoma de Catalunya. Fundat el 1886, es considera l'entitat esportiva més antiga en existència ininterrompuda d'Espanya, amb una rica tradició que abasta més d'un segle. Actualment, el club competeix al Grup 2 de la Primera Federació, la tercera categoria del futbol espanyol.
 
 Els seus partits com a local es disputen al Nou Estadi de Tarragona, un recinte amb capacitat per a 14.591 espectadors, tot i que inicialment podia acollir fins a 18.000 abans de l'inhabilitació d'una de les graderies. Aquest estadi ha estat testimoni de molts moments memorables en la història del club, incloent-hi ascensos i temporades destacades.
 
 Durant els últims anys, el Nàstic ha mantingut una forta connexió amb la seva afició. El 2016, el club i les seves seccions comptaven amb aproximadament 850 socis, mentre que, per exemple, durant la temporada 2017-2018, la Societat Anònima del Gimnàstic va registrar més de 8.500 abonats, reflectint l'esperit i el suport de la ciutat. Aquest compromís amb la comunitat ha estat un pilar fonamental per al creixement i la identitat del club al llarg del temps.</p>
-            </div>
-            <div class="col-12 col-md-6">
-                <div class="image-container">
-    <img src="./fotos web/altres/història.png" class="historia-img" alt="Historia 1">
-    <img src="./fotos web/altres/història2.png" class="historia-img" alt="Historia 2">
-</div>
-            </div>
         </div>
-    </section>
-</article>
+        <div class="col-12 col-md-6">
+          <div class="image-container">
+            <img src="./fotos web/altres/història.png" class="historia-img" alt="Historia 1">
+            <img src="./fotos web/altres/història2.png" class="historia-img" alt="Historia 2">
+          </div>
+        </div>
       </div>
     </section>
-    <section>
-
   </article>
 
   <!-- Secció de Animació escut -->
   <article class="my-3" id="escut">
     <div class="container">
-     <div class="titols"> <h2 >Escuts</h2></div>
+      <div class="titols"><h2>Escuts</h2></div>
     </div>
     <div id="animacioescuts"></div>
-  
-        <div class="demo">
-        <div id="boxFromTo">
+    <div class="demo">
+      <div id="boxFromTo">
         <img src="fotos web/escuts/timeline.png" class="animacioescuts" alt="linea de temps evolució escut Nàstic">
-        </div>
       </div>
-  </section>
-  
+    </div>
   </article>
 
   <!-- Secció de Samarretes -->
   <article class="container my-3" id="samarretes">
     <div class="mb-5">
-     <div class="titols"><h2>Samarretes</h2>
-    </div></div>   
+      <div class="titols"><h2>Samarretes</h2></div>
+    </div>   
     <section class="mb-5">
       <h3 class="temporada">Temporada 2025-2026</h3>
       <div class="d-flex gap-3 justify-content-center flex-wrap">
@@ -375,7 +364,7 @@ Durant els últims anys, el Nàstic ha mantingut una forta connexió amb la seva
       </div>
     </section>
     <section>
-      <h3 class="temporada"></h3>Temporada 2017-2018</h3>
+      <h3 class="temporada">Temporada 2017-2018</h3>
       <div class="d-flex gap-3 justify-content-center flex-wrap">
         <div class="card" style="width: 18rem;">
           <img src="./fotos web/samarretes/17.1.png" class="card-img-top" alt="">
@@ -478,15 +467,32 @@ Durant els últims anys, el Nàstic ha mantingut una forta connexió amb la seva
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
   <script>
     gsap.fromTo("#boxFromTo",
-    { x: 200},  // posición inicial y transparente
-    { x: -1000,    // posición final y visible
-      duration: 10,
-      repeat: -1,
-      yoyo: true,
-      ease: "power1.inOut", 
-    }
-  );
+      { x: 200},
+      { x: -1000,
+        duration: 10,
+        repeat: -1,
+        yoyo: true,
+        ease: "power1.inOut"
+      }
+    );
     gsap.registerPlugin(ScrollTrigger);
+
+    // Animation for Historia images
+    const historiaImages = gsap.utils.toArray(".historia-img");
+    historiaImages.forEach((img, index) => {
+      gsap.set(img, { opacity: index === 0 ? 1 : 0 }); // First image visible, second hidden
+    });
+
+    const historiaTimeline = gsap.timeline({
+      repeat: -1,
+      yoyo: true
+    });
+
+    historiaTimeline
+      .to(historiaImages[0], { opacity: 0, duration: 2, ease: "power2.inOut" }, 0)
+      .to(historiaImages[1], { opacity: 1, duration: 2, ease: "power2.inOut" }, 0)
+      .to(historiaImages[1], { opacity: 0, duration: 2, ease: "power2.inOut" }, 4)
+      .to(historiaImages[0], { opacity: 1, duration: 2, ease: "power2.inOut" }, 4);
 
     const tlPrincipal = gsap.timeline({
       scrollTrigger: {
@@ -630,7 +636,6 @@ Durant els últims anys, el Nàstic ha mantingut una forta connexió amb la seva
         console.log(`📊 Progreso: ${(self.progress * 100).toFixed(0)}%`);
       }
     });
-    
   </script>
 </body>
 </html>
