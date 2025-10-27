@@ -75,7 +75,7 @@ body {
 }
 @font-face {
     font-family: 'Stentiga';
-    src: url('/ttf/Stentiga.otf') format('opentype');
+    src: url('ttf/Stentiga.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -123,3 +123,4 @@ section {
         max-width: 300%; /* Increase size significantly for mobile */
     }
 }
+

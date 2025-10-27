@@ -10,17 +10,18 @@
         crossorigin="anonymous">
    <link rel="stylesheet" href="estils.css">
   <link href="/ttf/Stentiga.otf" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="fotos web/altres/favicon.png">
 
 </head>
 
 <body style="background-color: #e7e2d5;">
   
   <header>
-    <nav class="navbar navbar-expand-lg sticky-top " style="background-color: #e7e2d5;">
+    <nav class="navbar navbar-expand-lg fixed-top " style="background-color: #e7e2d5;">
       <div class="container">
         <h1 class="visually-hidden">Club Esportiu Gimnàstic</h1>
         
-        <img src="fotos web/altres/ex-01.png" alt="Logo" width="160" height="60" class="d-inline-block align-text-top ms-4 ">
+        <img src="fotos web/altres/logonegre-02.png" alt="Logo" width="350" height="80" class="d-inline-block align-text-top ms-4 ">
         
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -47,7 +48,7 @@
       </div>
     </nav>
     <video autoplay muted loop playsinline width="100%" height="auto" poster="portada.jpg">
-      <source src="./fotos web/altres/prova de banner.mp4" type="video/mp4">
+      <source src="./fotos web/altres/Secuencia 01_2.mp4" type="video/mp4">
     </video>
   </header>
 
@@ -420,8 +421,8 @@ Durant els últims anys, el Nàstic ha mantingut una forta connexió amb la seva
   historiaTimeline
     .to(historiaImages[0], { opacity: 0, duration: 2, ease: "power2.inOut" }, 0)
     .to(historiaImages[1], { opacity: 1, duration: 2, ease: "power2.inOut" }, 0)
-    .to(historiaImages[1], { opacity: 0, duration: 2, ease: "power2.inOut" }, 4)
-    .to(historiaImages[0], { opacity: 1, duration: 2, ease: "power2.inOut" }, 4);
+    .to(historiaImages[1], { opacity: 0, duration: 3, ease: "power2.inOut" }, 4)
+    .to(historiaImages[0], { opacity: 1, duration: 0.5, ease: "power2.inOut" }, 4);
 
   // ✅ CARRUSEL INICIALIZADO CORRECTAMENTE
   document.addEventListener('DOMContentLoaded', function () {
