@@ -39,6 +39,9 @@ h3 {
     transform: scale(1.3);
     transition: transform 0.3s;
 }
+p{
+    text-align: justify;
+}
 
 .card {
     border: none !important;
@@ -118,9 +121,22 @@ section {
     outline: 2px solid #ff5733 !important;
     box-shadow: 0 0 0 0.25rem rgba(255, 87, 51, 0.25) !important;
 }
+
 @media (max-width: 768px) {
     .animacioescuts {
         max-width: 300%; /* Increase size significantly for mobile */
     }
+        .logo-container {
+        width: 400px; /* Reduce el tamaño del contenedor en móviles */
+        height: auto;
+    }
+    .logo-img {
+        max-width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+    }
 }
-
+.logo-img {
+    max-width: 50%; /* Asegura que la imagen no exceda el contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+}
