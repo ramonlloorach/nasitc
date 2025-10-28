@@ -1,36 +1,19 @@
 .card-title {
-    font-family: 'Montserrat', serif;
+    font-family: 'Stentiga', serif;
     text-align: center;
 }
 
-h1 {
-    font-family: 'Stentiga', serif;
-    font-size: 28px;
-}
-.titols h1 {
-    font-family: 'Stentiga', serif;
-    font-size: 52px;
-    padding-top: 5%;
-}
 h2 {
     font-family: 'Stentiga', serif;
     font-size: 28px;
 }
 .titols h2 {
     font-family: 'Stentiga', serif;
-    font-size: 52px;
-    padding-top: 5%;
+    font-size: 40px;
+    padding-top: 0 !important;   
+    margin-top: 0 !important;   
+    margin-bottom: 1rem;
 }
-h3 {
-    font-family: 'Stentiga', serif;
-    font-size: 28px;
-}
-.titols h3 {
-    font-family: 'Stentiga', serif;
-    font-size: 52px;
-    padding-top: 5%;
-}
-
 .card-img-top {
     padding: 20px;
 }
@@ -42,7 +25,6 @@ h3 {
 p{
     text-align: justify;
 }
-
 .card {
     border: none !important;
     background-image: url('fotos web/altres/textura.png');
@@ -63,6 +45,8 @@ p{
     background-color: rgba(214, 206, 184);
     padding: 10px;
     border-radius: 10px; 
+    
+    
 }
 
 .animacioescuts {
@@ -93,7 +77,10 @@ body {
     padding-top: 100%; /* 1:1 aspect ratio for square shape */
     overflow: hidden;
 }
-
+#historia section {
+    padding-top: 0 !important;
+    padding-bottom: 2rem;
+}
 .historia-img {
     position: absolute;
     top: 0;
@@ -168,4 +155,57 @@ section {
   display: inline-block;
   white-space: nowrap;
   will-change: transform;
+}
+/* --- Jugadors Històrics: Card creix, però imatge NO --- */
+.jugador-card {
+    border: none !important;
+    background-image: url('fotos web/altres/textura.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 1;
+}
+
+.jugador-card:hover {
+    transform: scale(1.08);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+/* La imatge NO es mou ni escala amb la card */
+.jugador-card img {
+    padding: 15px;
+    object-fit: contain;
+    height: 280px;
+    display: block;
+    position: relative;
+    z-index: 2;
+    /* Aquest és el truc: evita que l'img hereti el transform */
+    transform: none !important;
+    transition: none !important;
+}
+/* --- Botons i Collapse Jugadors --- */
+.jugador-card .btn {
+    font-family: 'Stentiga', serif;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    padding: 4px 12px;
+}
+
+.jugador-card .collapse {
+    transition: height 0.3s ease;
+}
+
+.jugador-card .collapse.show {
+    margin-top: 12px;
+}
+
+/* Opcional: estil per al text dins del collapse */
+.jugador-card .collapse div {
+    line-height: 1.5;
+    color: #333;
 }
