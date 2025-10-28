@@ -209,3 +209,157 @@ section {
     line-height: 1.5;
     color: #333;
 }
+
+/* --- FLETXES FORA DEL MARGE + ESTIL PERSONALITZAT --- */
+#estadi {
+    overflow: visible !important;
+}
+
+.custom-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.169);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.85;
+    transition: all 0.3s ease;
+}
+
+.custom-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.95);
+    opacity: 1;
+    transform: translateY(-50%) scale(1.1);
+}
+
+/* Fletxa esquerra: fora a l'esquerra */
+.carousel-control-prev.custom-arrow {
+    left: -50px;
+}
+
+/* Fletxa dreta: fora a la dreta */
+.carousel-control-next.custom-arrow {
+    right: -50px;
+}
+
+/* Icones més grans i blanques */
+.custom-arrow .carousel-control-prev-icon,
+.custom-arrow .carousel-control-next-icon {
+    width: 28px;
+    height: 28px;
+    background-size: 100%;
+    filter: brightness(0) invert(1);
+}
+
+/* En mòbil: més a prop però encara fora */
+@media (max-width: 768px) {
+    .custom-arrow {
+        width: 50px;
+        height: 50px;
+    }
+    .carousel-control-prev.custom-arrow { left: -20px; }
+    .carousel-control-next.custom-arrow { right: -20px; }
+}
+
+/* --- SUBSCRIPCIÓ A TOT L'AMPLE --- */
+.subscribe-section {
+    background-image: url('fotos web/altres/textura.png');
+    position: relative;
+    z-index: 1;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    border-radius: 30px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+/* Fons amb textura */
+.subscribe-section::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url('fotos web/altres/textura.png');
+    background-size: cover;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+/* Container intern centrat */
+.subscribe-section .container {
+    max-width: 1400px;
+    padding: 2rem 1rem;
+}
+
+/* Inputs grans i arrodonits */
+.subscribe-section .form-control-lg.rounded-pill {
+    padding: 0.85rem 1.8rem;
+    font-size: 1.1rem;
+    border: 2px solid #dee2e6;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+
+/* Botó gran i animat */
+.subscribe-section .btn-primary {
+    padding: 0.9rem 3rem;
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+}
+
+.subscribe-section .btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Responsive: en mòbil, tot apilat i centrat */
+@media (max-width: 992px) {
+    .subscribe-section {
+        margin-left: -10px;
+        margin-right: -10px;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        border-radius: 20px;
+    }
+    .subscribe-section .display-5 {
+        font-size: 2rem;
+    }
+    .subscribe-section .btn-primary {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+}
+/* --- FOOTER A TOT L'AMPLE --- */
+footer {
+    background-color: #000000 !important;
+    color: white !important;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    padding: 1.5rem 1rem !important;
+    box-sizing: border-box;
+}
+
+footer a {
+    color: white !important;
+    text-decoration: none !important;
+    transition: opacity 0.3s ease;
+}
+footer p {
+    margin: 0.4rem 0;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    text-align: center ;
+}
+
+/* En mòbil: text més petit */
+@media (max-width: 576px) {
+    footer p {
+        font-size: 0.8rem;
+    }
+}
