@@ -128,7 +128,7 @@ section {
         max-width: 300%; /* Increase size significantly for mobile */
     }
         .logo-container {
-        width: 400px; /* Reduce el tamaño del contenedor en móviles */
+        width: 250px; /* Reduce el tamaño del contenedor en móviles */
         height: auto;
     }
     .logo-img {
