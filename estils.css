@@ -156,3 +156,16 @@ section {
     width: 30px;
     height: 30px;
 }
+/* --- Evita que l'animació GSAP provoqui scroll horitzontal --- */
+.demo {
+  position: relative;
+  overflow-x: hidden; /* talla el desbordament */
+  width: 100%;
+}
+
+/* Assegura que el contingut animat no desplaci la resta */
+#boxFromTo {
+  display: inline-block;
+  white-space: nowrap;
+  will-change: transform;
+}
