@@ -75,6 +75,7 @@ p{
 
 body {
     overflow-x: hidden;
+    padding-top: 80px;
 }
 @font-face {
     font-family: 'Stentiga';
@@ -139,4 +140,19 @@ section {
     height: auto; /* Mantiene la proporción de la imagen */
     margin-top: 0.75rem;
     margin-bottom: 0.75rem;
+}
+/* Estil per al botó hamburger en mòbils */
+.navbar-toggler {
+    border: none;
+    padding: 4px 8px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23000' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    width: 30px;
+    height: 30px;
 }
