@@ -113,19 +113,19 @@ section {
 
 @media (max-width: 768px) {
     .animacioescuts {
-        max-width: 300%; /* Increase size significantly for mobile */
+        max-width: 300%; 
     }
         .logo-container {
-        width: 350px; /* Reduce el tamaño del contenedor en móviles */
+        width: 300px; /* Redueix a mida per mòbils*/
         height: auto;
     }
     .logo-img {
-        max-width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+        max-width: 100%; /* Asegura que l'imatge s'ajusti al contenidor */
     }
 }
 .logo-img {
-    max-width: 50%; /* Asegura que la imagen no exceda el contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
+    max-width: 50%; /* Asegura quel'imatge no surti del contenedor i evitem molts problemes a la versió mòbil */
+    height: auto; 
     margin-top: 0.75rem;
     margin-bottom: 0.75rem;
 }
@@ -185,7 +185,6 @@ section {
     display: block;
     position: relative;
     z-index: 2;
-    /* Aquest és el truc: evita que l'img hereti el transform */
     transform: none !important;
     transition: none !important;
 }
@@ -205,13 +204,12 @@ section {
     margin-top: 12px;
 }
 
-/* Opcional: estil per al text dins del collapse */
 .jugador-card .collapse div {
     line-height: 1.5;
     color: #333;
 }
 
-/* --- FLETXES FORA DEL MARGE + ESTIL PERSONALITZAT --- */
+/* --- Fletxesfora del marge per millorar llegibilitat--- */
 #estadi {
     overflow: visible !important;
 }
@@ -247,7 +245,7 @@ section {
     right: -50px;
 }
 
-/* Icones més grans i blanques */
+/* Icones més grans*/
 .custom-arrow .carousel-control-prev-icon,
 .custom-arrow .carousel-control-next-icon {
     width: 28px;
@@ -263,7 +261,7 @@ section {
         display: none !important;
     }
 }
-}
+
 
 /* --- SUBSCRIPCIÓ A TOT L'AMPLE --- */
 .subscribe-section {
@@ -334,6 +332,9 @@ section {
         width: 100%;
         font-size: 1.2rem;
     }
+    footer p {
+        font-size: 0.8rem;
+    }
 }
 /* --- FOOTER A TOT L'AMPLE --- */
 footer {
@@ -357,9 +358,51 @@ footer p {
     text-align: center ;
 }
 
-/* En mòbil: text més petit */
-@media (max-width: 576px) {
-    footer p {
-        font-size: 0.8rem;
-    }
+
+/*ORRECCIÓ ANCORATGES AMB NAVBAR FIXA Basicament fa que cada cop que pressionem un element del nav baixa unamica més per fer-ho quadrar amb el text*/
+html { scroll-behavior: smooth; }
+
+[id] { scroll-margin-top: 150px; }   /* 80px del body + 10px de marge extra */
+
+/* ===== Estils moguts des d'inline ===== */
+
+.body-bg {
+    background-color: #e7e2d5;
+}
+
+.navbar-bg {
+    background-color: #e7e2d5;
+}
+
+.card-fixed-width {
+    width: 18rem;
+}
+
+.info-title {
+    font-family: 'Stentiga', serif;
+    color: #000000;
+}
+
+.btn-submit {
+    background: #a00b06; 
+    border: none; 
+    font-family: 'Stentiga', serif;
+}
+
+.footer-styling {
+    background-color: #000000; 
+    color: white; 
+    font-family: 'Stentiga', serif;
+}
+
+.footer-logo {
+    height: 30px; 
+    vertical-align: middle; 
+    margin-right: 8px;
+}
+
+.collapse-text {
+    background: rgba(255,255,255,0.9); 
+    border-radius: 8px; 
+    font-size: 0.9rem;
 }
