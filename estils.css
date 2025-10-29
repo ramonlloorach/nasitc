@@ -364,7 +364,7 @@ html { scroll-behavior: smooth; }
 
 [id] { scroll-margin-top: 150px; }   /* 80px del body + 10px de marge extra */
 
-/* ===== Estils moguts des d'inline ===== */
+/*  Estils moguts des d'inline*/
 
 .body-bg {
     background-color: #e7e2d5;

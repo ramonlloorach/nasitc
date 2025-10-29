@@ -30,7 +30,7 @@
     .to(historiaImages[1], { opacity: 0, duration: 3, ease: "power2.inOut" }, 4)
     .to(historiaImages[0], { opacity: 1, duration: 0.5, ease: "power2.inOut" }, 4);
 
-  // ✅ CARRUSEL INICIALIZADO CORRECTAMENTE
+  // carrusel
   document.addEventListener('DOMContentLoaded', function () {
     const carouselElement = document.getElementById('carouselExampleAutoplaying');
     if (carouselElement) {
