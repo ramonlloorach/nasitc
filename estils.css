@@ -60,6 +60,7 @@ p{
 body {
     overflow-x: hidden;
     padding-top: 80px;
+    
 }
 @font-face {
     font-family: 'Stentiga';
@@ -115,7 +116,7 @@ section {
         max-width: 300%; /* Increase size significantly for mobile */
     }
         .logo-container {
-        width: 250px; /* Reduce el tamaño del contenedor en móviles */
+        width: 350px; /* Reduce el tamaño del contenedor en móviles */
         height: auto;
     }
     .logo-img {
@@ -261,8 +262,9 @@ section {
         width: 50px;
         height: 50px;
     }
-    .carousel-control-prev.custom-arrow { left: -20px; }
-    .carousel-control-next.custom-arrow { right: -20px; }
+    .carousel-control-prev.custom-arrow { left: -20px; top: 165px; }
+    .carousel-control-next.custom-arrow { right: -20px; top: 165px; }
+    
 }
 
 /* --- SUBSCRIPCIÓ A TOT L'AMPLE --- */
